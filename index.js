@@ -11,7 +11,6 @@ app.use(cors());
 app.use(express.static(Path.join(__dirname,`../dream`)))
 
 app.use(cors());
-
 mongoose.connect('mongodb://127.0.0.1:27017/theskillboost')
     .then(() => console.log("connected"))
     .catch((err) => console.log(err));
